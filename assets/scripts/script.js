@@ -2,15 +2,20 @@ let name = prompt("Ваше имя?", "");
 alert(name);
 
 let age = prompt("Ваш возраст?", "");;
-if (age <= 18) {
-    alert('Вам пора в школу!');
-} else if (age > 18 && age <=25) {
-    alert('Готовьтесь к сессии!');
-} else if (age > 25 && age <=55) {
-    alert('Пора на работу');
-} else {
-    alert('Пора на пенсию');
-} 
+
+switch (true) {
+    case age <= 18:
+      alert( "Вам меньше 18 лет" );
+      break;
+    case age > 18 && age <=25:
+      alert( "Вам пора готовиться к сессии" );
+      break;
+    case age > 25 && age <=55:
+      alert( "Пора на работу" );
+      break;
+    default:
+      alert( 'Вы пенсионер' );
+  }
 
 let btnText = document.getElementById('btnText');
 let btnUl = document.getElementById('btnUl');
