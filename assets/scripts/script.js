@@ -1,20 +1,20 @@
 let name = prompt("Ваше имя?", "");
-alert(name);
+alert(`Приятно познакомиться, ${name}!`);
 
 let age = prompt("Ваш возраст?", "");;
 
 switch (true) {
     case age <= 18:
-      alert( "Вам меньше 18 лет" );
+      alert( `${name}, Тебе ${age} лет! Иди в школу` );
       break;
     case age > 18 && age <=25:
-      alert( "Вам пора готовиться к сессии" );
+      alert( `${name}, Вам ${age} лет! Вам пора готовиться к сессии` );
       break;
     case age > 25 && age <=55:
-      alert( "Пора на работу" );
+      alert( `${name}, Вам ${age} лет! Пора на работу`);
       break;
     default:
-      alert( 'Вы пенсионер' );
+      alert( `${name}, Вам ${age} лет! И Вы пенсионер!`);
   }
 
 let btnText = document.getElementById('btnText');
